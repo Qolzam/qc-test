@@ -1,7 +1,7 @@
 version: 1.0
 provider:
   name: openfaas
-  gateway: http://inlets.local
+  gateway: http://inlets.k.local
 functions:
   go-fn:
     lang: golang-http-armhf
