@@ -1,7 +1,7 @@
 version: 1.0
 provider:
   name: openfaas
-  gateway: http://inlets.ngthuy99.cloud.local
+  gateway: http://inlets.ngthuy99.cloud.k8spin.local
 functions:
   go-fn:
     lang: golang-http-armhf
