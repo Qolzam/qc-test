@@ -4,6 +4,6 @@ provider:
   gateway: http://fn.chai.local
 functions:
   go-fn:
-    lang: golang-http-armhf
+    lang: go-armhf
     handler: ./go-fn
     image: go-fn:latest
