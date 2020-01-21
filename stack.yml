@@ -6,4 +6,9 @@ functions:
   go-fn:
     lang: golang-http-armhf
     handler: ./go-fn
-    image: go-fn:latest
+    image: qolzam/go-fn:v0.1.0
+    annotations:
+     edge.gateway: "http://inlets.default"
+     edge.user: "fwJdpYxnGt4rridk0CFQSg=="
+     edge.password: "vKw2Fo_qeK4yW2SXxtNLT0zHa6ThGTg9O2DQzXALIXoWzM_TBsvchRU="
+      
