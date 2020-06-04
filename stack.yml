@@ -1,14 +1,10 @@
 version: 1.0
 provider:
   name: openfaas
-  gateway: http://inlets.ks.local
+  gateway: http://127.0.0.1:31112
 functions:
   go-fn:
-    lang: golang-http-armhf
+    lang: go
     handler: ./go-fn
-    image: qolzam/go-fn:v0.1.0
-    annotations:
-     edge.gateway: "http://inlets.default/"
-     edge.user: "fwJdpYxnGt4rridk0CFQSg=="
-     edge.password: "vKw2Fo_qeK4yW2SXxtNLT0zHa6ThGTg9O2DQzXALIXoWzM_TBsvchRU="
-      
+    image: go-fn:latest
+
